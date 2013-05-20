@@ -9,6 +9,7 @@ would rather you only make a call on their server every hour so this
 could be setup to run from cron rather then every time the data is 
 displayed.
 
-current-conditions.js will eventually display a webpage using the data
-read from the xml file. Right now all it does is read and parse the xml
-file and loads it into an associative array.
+current-conditions.js reads the xml file, parses it into an associative
+array then displays select current conditions. I've been using Forever
+to run it as a damaen and it really seems to work well. It is available 
+through npm.
